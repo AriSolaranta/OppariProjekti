@@ -15,28 +15,22 @@ import {
   
   const headersData = [
     {
-      label: "Kategoria1",
+      label: "Manga",
       href: "/",
     },
+
     {
-        label: "Katetgoria2",
-        href: "/",
-    },
-    {
-        label: "Kategoria3",
-        href: "/",
-    },
-    {
-        label: "Kategoria4",
-        href: "/",
+      label: "Leffat",
+      href: "/",
     },
   ];
   
   const useStyles = makeStyles(() => ({
     header: {
-      backgroundColor: "#400CCC",
+      backgroundColor: "purple",
       paddingRight: "79px",
       paddingLeft: "35px",
+      width: "100%",
       "@media (max-width: 900px)": {
         paddingLeft: 0,
       },
@@ -59,6 +53,7 @@ import {
     },
     drawerContainer: {
       padding: "20px 50px",
+      display: "grid",
     },
   }));
   
@@ -145,6 +140,7 @@ import {
             }}
           >
             <MenuItem>{label}</MenuItem>
+            <hr color="black"></hr>
           </Link>
         );
       });
@@ -152,7 +148,7 @@ import {
   
     const sivustoLogo = (
       <Typography variant="h5" component="h1" className={logo}>
-        Sivusto
+        Tietopankki
       </Typography>
     );
   

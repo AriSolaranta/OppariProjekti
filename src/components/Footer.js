@@ -3,7 +3,6 @@ import {
   Box,
   Container,
   Row,
-  Column,
   FooterLink,
   Heading,
 } from "./FooterStyles";
@@ -11,20 +10,12 @@ import {
 const Footer = () => {
   return (
     <Box>
-      <h1 style={{ color: "green", 
-                   textAlign: "center", 
-                   marginTop: "-50px" }}>
-        Footer sisältö tänne
-      </h1>
       <Container>
-          <h2 style= {{ color: "blue",
-                        textAlign: "center"
-                        }}>Otsikko</h2>
+        <Heading>Linkit</Heading>
         <Row>
-            <FooterLink href="#">Testi01</FooterLink>
-            <FooterLink href="#">Testi02</FooterLink>
-            <FooterLink href="#">Testi03</FooterLink>
-            <FooterLink href="#">Testi04</FooterLink>                  
+          <FooterLink target="_blank" href="https://www.mangakakalot.com">Mangakakalot</FooterLink>
+          <FooterLink target="_blank" href="https://www.isekaiscan.com">Isekaiscan</FooterLink>
+          <FooterLink target="_blank" href="https://1stkissmanga.io">1stkissmanga</FooterLink>
         </Row>
       </Container>
     </Box>
